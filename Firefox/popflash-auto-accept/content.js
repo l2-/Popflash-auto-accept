@@ -12,7 +12,7 @@ async function isAutoAcceptPromise() {
 let buttons = [];
 
 function shouldClick(element, autoAccept) {
-    return element.textContent == stringtomatch && autoAccept;
+    return element.textContent.toLowerCase().startsWith(stringtomatch.toLowerCase()) && autoAccept;
 }
 
 function onStorageChanged(changes, area) {
