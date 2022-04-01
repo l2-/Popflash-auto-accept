@@ -1,0 +1,29 @@
+{
+    "name": "Popflash auto accept",
+    "description": "Automatically ready ups for the pending match when in lobby.",
+    "version": "1.1",
+    "manifest_version": 3,
+    "icons": {
+        "64": "icons/favicon.png"
+    },
+    "permissions": [
+        "storage",
+        "activeTab"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.popflash.site/scrim/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_icon": "icons/favicon.png"
+    }
+}

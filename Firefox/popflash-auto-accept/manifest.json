@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Popflash auto accept",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Automatically ready ups for the pending match when in lobby.",
   "icons": {
     "64": "icons/favicon.png"
